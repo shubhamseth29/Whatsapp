@@ -27,7 +27,7 @@
 }
 #main-chat
 {
-    background-image: url(/images/chat-bg.png);
+    background-image: url("/images/chat-bg.png");
     background-repeat: repeat;
     grid-area: main-chat;
     overflow-y: scroll;
