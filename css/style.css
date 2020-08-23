@@ -46,19 +46,30 @@
     font-size: 10px;
 }
 
-.other{
-    background: ivory;
-    border: 1px solid ivory;
+.my{
+    background:rgb(217, 255, 102);
+    border: 1px solid rgb(217, 255, 102);
     border-radius: 14px 14px 0 14px;
     justify-content: end;
     justify-items: end;
 }
-.my{
-    background:rgb(217, 255, 102) ;
-    border: 1px solid rgb(217, 255, 102);
+.other{
+    background:ivory ;
+    border: 1px solid ivory;
     border-radius: 14px 14px 14px 0;
     justify-content: start;
     justify-items: start;
+}
+
+#my-chat{
+    font-size: 15px;
+    background-color: rgb(217, 255, 102);
+    border-radius: 20%;
+}
+#other-chat{
+    font-size: 15px;
+    background-color: ivory;
+    border-radius: 20%;
 }
 
 #profile-top{
@@ -132,7 +143,7 @@
 #chat-text-area{
     grid-area: chat-text-area;
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 5fr 1fr;
     align-content: center;
     align-items: center;
     
