@@ -152,15 +152,22 @@
 #chat-name-top
 {
     grid-area: chat-name-top;
-    display: grid;
+    display: flex;
+    align-items: center;
+    
+    /* display: grid;
     grid-template-columns: 15% 50% 7% 7% 7%;
     align-content: center;
-    align-items: center;
+    align-items: center; */
 }
+
 
 #ChatName{
     font-family: monospace;
+    flex: 6;
+    padding-left: 10px;
     }
+
 
 #chat-text-area{
     grid-area: chat-text-area;
