@@ -1,7 +1,7 @@
 #main-container{
     height: 100vh;
-    margin-top: 0;
-    padding-top: 0;
+    margin: 0;
+    padding: 0;
     display: grid;
     grid-template-columns: 35% 65%;
     grid-template-rows: 8% 7% auto 8%;
@@ -15,8 +15,8 @@
 {   
     #main-container{
         height: 100vh;
-        margin-top: 0;
-        padding-top: 0;
+        margin: 0;
+        padding: 0;
         display: grid;
         grid-template-columns: auto;
         /* grid-template-rows: 8% 7% auto 8%; */
