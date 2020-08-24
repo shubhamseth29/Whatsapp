@@ -11,6 +11,25 @@
                         "chat-container main-chat"
                         "chat-container chat-text-area";    
 }
+@media only screen and (max-width: 768px)
+{   
+    #main-container{
+        height: 100vh;
+        margin-top: 0;
+        padding-top: 0;
+        display: grid;
+        grid-template-columns: auto;
+        /* grid-template-rows: 8% 7% auto 8%; */
+        grid-template-areas: 
+                            " profile-top "
+                            "search-box "
+                            "chat-container"
+                            "chat-name-top "
+                            "main-chat" 
+                            "chat-text-area";
+    }    
+
+}
 
 #profile-top,
 #chat-name-top
