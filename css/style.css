@@ -130,6 +130,9 @@
 .chat-list:active{
     background-color: grey;
 }
+.active{
+     background-color: grey;
+}
 .chat-list > img{
     grid-row: span 2;
     height: 40px;
