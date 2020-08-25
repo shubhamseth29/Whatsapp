@@ -5,6 +5,9 @@ var curtime = today.getHours() + ":" + today.getMinutes();
 const searchInput=document.getElementById("search-input");
 const chatContainer=document.getElementById("chat-container");
 const chatList=document.getElementsByClassName("chat-list");
+const search=document.getElementById("search-input-chat");
+const chatRow=document.getElementsByClassName("chat-row");
+const searchIcon=document.getElementById("search");
 
 //CODE TO ADD CHAT MESSAGE TO SCREEN FROM CHAT BOX
 chatText.addEventListener("keyup",(e)=>
@@ -62,7 +65,7 @@ searchInput.addEventListener('keyup',(e)=>
            var chatName=name.textContent;
            if(chatName.toLowerCase().indexOf(text)!=-1)
            {
-                name.style.display='block';
+                name.style.display='grid';
            }
            else
            {
@@ -70,9 +73,36 @@ searchInput.addEventListener('keyup',(e)=>
            }
            
        });
+    });
+
+ //CODE TO SEARCH FOR MESSAGES IN CHAT BOX
+ search.addEventListener('keyup',(e)=>
+       {    
+           var text=search.value.toLowerCase();
+           var chatText=mainChat.getElementsByClassName("chat-row");
+           Array.from(chatText).forEach(function(texte)
+           {
+               var textmsg=texte.textContent;
+               if(textmsg.toLowerCase().indexOf(text)!=-1)
+               {
+                    texte.style.display='grid';
+               }
+               else
+               {
+                    texte.style.display='none';
+               }
+           })
+       });
+
+ //CODE TO SHOW/HIDE SEARCH CHAT BOX
+       searchIcon.addEventListener("mouseover",(e)=>
+       {    
+           console.log("hi")
+           if(search.style.display==='none')
+           {
+            search.style.display='grid';
+           }
+           else
+           search.style.display='none';
+       });
    
-       
-
-
-
-})
