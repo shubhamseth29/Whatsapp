@@ -1,7 +1,7 @@
 #main-container{
     height: 100vh;
-    margin-top: 0;
-    padding-top: 0;
+    margin: 0;
+    padding: 0;
     display: grid;
     grid-template-columns: 35% 65%;
     grid-template-rows: 8% 7% auto 8%;
@@ -11,6 +11,7 @@
                         "chat-container main-chat"
                         "chat-container chat-text-area";    
 }
+
 @media only screen and (max-width: 768px)
 {   
     #main-container{
@@ -19,7 +20,6 @@
         padding-top: 0;
         display: grid;
         grid-template-columns: auto;
-        /* grid-template-rows: 8% 7% auto 8%; */
         grid-template-areas: 
                             " profile-top "
                             "search-box "
@@ -149,15 +149,22 @@
 #chat-name-top
 {
     grid-area: chat-name-top;
-    display: grid;
+    display: flex;
+    align-items: center;
+    
+    /* display: grid;
     grid-template-columns: 15% 50% 7% 7% 7%;
     align-content: center;
-    align-items: center;
+    align-items: center; */
 }
+
 
 #ChatName{
     font-family: monospace;
+    flex: 6;
+    padding-left: 10px;
     }
+
 
 #chat-text-area{
     grid-area: chat-text-area;
